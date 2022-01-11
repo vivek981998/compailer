@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label for="command"  >command</label>
+<input type = "text" id="command">
+<button type="button" id="a" onclick="hi()" > button</button>
+<script>
+function hi() {
+const viper = document.getElementById("command").value;
+console.log (viper);
+const pranesh = viper  ;
+const siva = pranesh.trim();
+const ahmad = siva.split(' ');
+console.log (ahmad);
+const e = ahmad[0];
+const f = ahmad[1];
+const g = ahmad[2];
+const h = ahmad[3];
+if ( ((e === "add") || (e ==="sub") || ( e === "mul") || (e === "dis" )) && (!isNaN(f) ) && ( g === ",") && (!isNaN(h) ))
+{
+switch (e) 
+{
+case "add":
+ const v = (parseInt(f));
+const p = (parseInt(h));
+const w = (p+v);
+console.log(w);
+break;
+case "sub" : 
+const o = (f-h);
+console.log(o);
+break;
+case "mul" :
+const z = (f*h);
+console.log (z);
+break;
+case "dis" :
+const r = (f/h);
+console.log(r);
+break;
+}
+}
+else
+{console.log ( "syntax error");
+}
+}
+</script>
+</body>
+</html>
